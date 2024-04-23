@@ -1,90 +1,3 @@
-// import React, { useEffect, useState} from "react";
-// import { CommonSection } from "../shared/CommonSection";
-// import "../styles/tour.css";
-// import { Container, Row, Col } from "reactstrap";
-// import SearchBar from "../shared/SearchBar";
-// // import tourData from "../assets/data/tours";
-// // import tours from "../assets/data/tours";
-// import TourCard from "../shared/TourCard";
-// import Newsletter from "../shared/Newsletter";
-// import {shallowEqual, useDispatch, useSelector} from "react-redux";
-// import { useSearchParams } from "react-router-dom";
-// import { getTour } from "../Redux/ToursReducer/action";
-// import { Sidebar } from "../components/Sidebar";
-
-// const Tours = () => {
-//   const [page, setPage] = useState(1)
-//   const { isLoading, isError, tours } = useSelector((store) => {
-//     return {
-//       isLoading : store.tourReducer.isLoading,
-//       isError : store.tourReducer.isError,
-//       tours : store.tourReducer.tours,     
-//     }
-//   },shallowEqual);
-
-
-//   const [searchParams] = useSearchParams();
-//   const dispatch = useDispatch();
-
-//  useEffect(() => {
-//     const params = {
-//       _q:searchParams.get("q"),
-//       _limit:12,
-//       _page: page,
-//       _sort : searchParams.get("order") && "price",
-//       _order : searchParams.get("order")
-//     }
-//     dispatch(getTour(params))
-//   },[dispatch, searchParams])
-//   return (
-//     <>
-//       <CommonSection title="All Tours" />
-//       <section>
-//         <Container>
-//           <Row>
-//             <SearchBar />
-//             <Sidebar/>
-//           </Row>
-//         </Container>
-//       </section>
-//       <section className="pt-0">
-//         <Container>
-//         { isLoading &&  <h1>Loading...</h1>}
-//         {isError && <h1>Errorrrr...</h1>}
-//           <Row>
-//             {!isLoading && !isError && tours?.map((tour) => (
-//               <Col lg="3" gap="10px" key={tour.id}>
-//                 <TourCard tour={tour} />
-//               </Col>
-//             ))}
-
-//             <Col lg="12"></Col>
-//             {/* <div className="pagination d-flex align-items-center justify-content-center mt-4 gap">
-//               {
-//               [...Array(pageCount).keys()].map((number) => (
-//                 <span
-//                   key={number}
-//                   onClick={() => setPage(number)}
-//                   className={(page == number ? "active_number" : "")}
-//                 >
-//                   {number + 1}
-//                 </span>
-//               ))
-//               }
-//             </div> */}
-//           </Row>
-//         </Container>
-//       </section>
-//       <Newsletter/>
-//     </>
-//   );
-// };
-
-// export default Tours;
-
-
-
-
 import React, { useEffect, useState } from "react";
 import { CommonSection } from "../shared/CommonSection";
 import "../styles/tour.css";
@@ -101,7 +14,9 @@ import loading from '../assets/loading.gif'
 import { Img } from "@chakra-ui/react";
 
 const Tours = () => {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
+  const [pageCount, setPageCount] = useState(0);
+
   const { isLoading, isError, tours, totalPages } = useSelector((store) => {
     return {
       isLoading: store.tourReducer.isLoading,
@@ -115,6 +30,9 @@ const Tours = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    const pages = Math.ceil(8/4)
+    setPageCount(pages)
+
     const params = {
       _q: searchParams.get("q"),
       _limit: 12,
@@ -149,14 +67,23 @@ const Tours = () => {
                 <TourCard tour={tour} />
               </Col>
             ))}
-          </Row>
-          <Row>
-            <Col lg="12"></Col>
-            {!isLoading && <Pagination
-              totalPages={totalPages}
-              currentPage={page}
-              setCurrentPage={setPage}
-            />}
+          {/* </Row>
+          <Row> */}
+            <Col lg="12">
+              <div className="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
+                {/* {!isLoading && <Pagination
+                totalPages={totalPages}
+                currentPage={page}
+                setCurrentPage={setPage}
+                />} */}
+                {[...Array(pageCount).keys()].map(number => (
+                  <span key={number} onClick={()=> setPage(number)} className={page===number ? 'active__page' : ''} >
+                    {number+1}
+                  </span>
+
+                ))}
+              </div>
+            </Col>
           </Row>
         </Container>
       </section>

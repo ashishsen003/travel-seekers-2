@@ -26,7 +26,7 @@ const Header = () => {
 
   const stickyHeaderFunc = ()=>{
     window.addEventListener('scroll', ()=>{
-      if(document.body.scrollTop > 80 || document.documentElement.body.scrollTop > 80){
+      if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
         headerRef.current.classList.add('sticky__header')
       } else {
         headerRef.current.classList.remove('sticky__header')
@@ -34,10 +34,10 @@ const Header = () => {
     })
   }
 
-  // useEffect(()=>{
-  //   stickyHeaderFunc()
-  //   return window.removeEventListener('scroll', stickyHeaderFunc)
-  // })
+  useEffect(()=>{
+    stickyHeaderFunc()
+    return window.removeEventListener('scroll', stickyHeaderFunc)
+  })
 
   return (
     <header className='header' ref={headerRef}>
@@ -68,6 +68,7 @@ const Header = () => {
             {/* =======menu end======= */}
             <div className='nav__right d-flex align-items-center gap-4'>
               <div className='nav__btns d-flex align-items-center gap-4'>
+                {/* <Button>button</Button> */}
                 <Button className='btn secondary__btn'><Link to='/login'>Login</Link></Button>
                 <Button className='btn primary__btn'><Link to='/register'>Register</Link></Button>
               </div>
