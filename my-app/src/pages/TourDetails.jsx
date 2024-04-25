@@ -55,7 +55,7 @@ const TourDetails = () => {
                         class="ri-star-s-fill"
                         style={{ color: "var(--secondary-color)" }}
                       ></i>
-                      {calculateAvgRating === 0 ? null : avgRating}
+                      {avgRating === 0 ? null : avgRating}
                       {totalRating === 0 ? (
                         "Not Rated"
                       ) : (

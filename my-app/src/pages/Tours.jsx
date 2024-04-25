@@ -9,8 +9,8 @@ import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import { getTour } from "../Redux/ToursReducer/action";
 import { Sidebar } from "../components/Sidebar";
-import Pagination from "./Pagination"; 
-import loading from '../assets/loading.gif'
+import Pagination from "./Pagination";
+import loading from "../assets/loading.gif";
 import { Img } from "@chakra-ui/react";
 
 const Tours = () => {
@@ -22,7 +22,7 @@ const Tours = () => {
       isLoading: store.tourReducer.isLoading,
       isError: store.tourReducer.isError,
       tours: store.tourReducer.tours,
-      totalPages: store.tourReducer.totalPages, 
+      totalPages: store.tourReducer.totalPages,
     };
   }, shallowEqual);
 
@@ -30,8 +30,8 @@ const Tours = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const pages = Math.ceil(8/4)
-    setPageCount(pages)
+    const pages = Math.ceil(8 / 4);
+    setPageCount(pages);
 
     const params = {
       _q: searchParams.get("q"),
@@ -44,7 +44,6 @@ const Tours = () => {
   }, [dispatch, searchParams, page]);
 
   // console.log(tours);
-  
 
   return (
     <>
@@ -59,16 +58,27 @@ const Tours = () => {
       </section>
       <section className="pt-0">
         <Container>
-          {isLoading && <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'  }}> <img src={loading} style={{width: '20%'}} /> </div>}
+          {isLoading && (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              {" "}
+              <img src={loading} style={{ width: "20%" }} />{" "}
+            </div>
+          )}
           {isError && <h1>Errorrrr...</h1>}
           <Row>
-            {!isLoading && !isError && tours?.map((tour) => (
-              <Col lg="3" gap="10px" key={tour.id}>
-                <TourCard tour={tour} />
-              </Col>
-            ))}
-          {/* </Row>
-          <Row> */}
+            {!isLoading &&
+              !isError &&
+              tours?.map((tour) => (
+                <Col lg="3" gap="10px" key={tour.id}>
+                  <TourCard tour={tour} />
+                </Col>
+              ))}
             <Col lg="12">
               <div className="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
                 {/* {!isLoading && <Pagination
@@ -76,11 +86,14 @@ const Tours = () => {
                 currentPage={page}
                 setCurrentPage={setPage}
                 />} */}
-                {[...Array(pageCount).keys()].map(number => (
-                  <span key={number} onClick={()=> setPage(number)} className={page===number ? 'active__page' : ''} >
-                    {number+1}
+                {[...Array(pageCount).keys()].map((number) => (
+                  <span
+                    key={number}
+                    onClick={() => setPage(number)}
+                    className={page === number ? "active__page" : ""}
+                  >
+                    {number + 1}
                   </span>
-
                 ))}
               </div>
             </Col>
