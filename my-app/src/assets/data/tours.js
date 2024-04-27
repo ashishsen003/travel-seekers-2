@@ -13,7 +13,6 @@ const tours = [
     city: "London",
     distance: 300,
     address: "somewhere",
-    address: "somewhere",
     price: 199,
     maxGroupSize: 10,
     desc: "Experience the vibrant Rio Carnival with samba parades and colorful costumes.",
