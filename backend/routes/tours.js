@@ -1,5 +1,5 @@
 import express from 'express'
-import { createTour, deleteTour, getAllTour, getSingleTour, updateTour } from '../controllers/tourController.js'
+import { createTour, deleteTour, getAllTour, getSingleTour, updateTour, getTourBySearch, getFeaturedTour } from '../controllers/tourController.js'
 
 const router = express.Router()
 
@@ -8,7 +8,9 @@ router.put('/:id', updateTour)
 router.delete('/:id', deleteTour)
 router.get('/:id', getSingleTour)
 router.get('/', getAllTour)
+router.get('/search/getTourBySearch', getTourBySearch)
+router.get('/search/getFeaturedTours', getFeaturedTour)
 
 
-export default router
+export default router   
 
