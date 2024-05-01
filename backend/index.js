@@ -10,6 +10,10 @@ import authRoute from './routes/auth.js'
 dotenv.config()
 const app = express()
 const port  = process.env.PORT || 8000
+const corsOptions = {
+    origin : true,
+    Credentials: true
+}
 
 const connect = async()=>{
     try {
@@ -24,11 +28,11 @@ const connect = async()=>{
 }
 
 app.use(express.json())
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(cookieParser())
-app.use('/tours', tourRoute)
-app.use('/users', userRoute)
-app.use('/auth', authRoute)
+app.use('/api/v1/auth', authRoute)
+app.use('/api/v1/tours', tourRoute)
+app.use('/api/v1/users', userRoute)
 
 app.get('/test', (req, res)=>{
     res.send('api is working')
