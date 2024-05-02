@@ -42,6 +42,7 @@ const tourSchema = new mongoose.Schema(
         ref: "Review",
       },
     ],
+
     featured: {
       type: Boolean,
       default: false,
@@ -50,4 +51,4 @@ const tourSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model('Tour', tourSchema)
+export default mongoose.model("Tour", tourSchema);
