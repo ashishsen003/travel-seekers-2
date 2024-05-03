@@ -1,3 +1,11 @@
+import tourImg1 from "../assets/images/tour-img1.jpg";
+import tourImg2 from "../assets/images/tour-img2.jpg";
+import tourImg3 from "../assets/images/tour-img3.jpg";
+import tourImg4 from "../assets/images/tour-img4.jpg";
+import tourImg5 from "../assets/images/tour-img5.jpg";
+import tourImg6 from "../assets/images/tour-img6.jpg";
+import tourImg7 from "../assets/images/tour-img7.jpg"; 
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { CardBody, Card } from "reactstrap";
@@ -7,6 +15,7 @@ import calculateRating from "../utils/avgRating";
 const TourCard = ({ tour }) => {
   const { id, title, city, photo, price, featured, reviews } = tour;
   const { totalRating, avgRating } = calculateRating(reviews);
+
 
   return (
     <div className="tour__card">

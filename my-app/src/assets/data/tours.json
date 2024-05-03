@@ -1,6 +1,5 @@
-    [
-      {
-      "id": 1,
+[
+    { 
       "title": "Mount Everest Expedition",
       "city": "Kathmandu",
       "address": "Base Camp, Nepal",
@@ -9,11 +8,10 @@
       "maxGroupSize": 6,
       "desc": "Embark on a challenging expedition to the world's highest peak.",
       "reviews": [],
-      "photo": "/tour-images/tour-img10.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/38e03d5e-59e2-4ce4-bc7a-d6f67e053ba4",
       "featured": true
     },
     {
-      "id": 2,
       "title": "Safari Adventure, Kenya",
       "city": "Nairobi",
       "address": "Savannah, Kenya",
@@ -22,11 +20,10 @@
       "maxGroupSize": 12,
       "desc": "Witness the incredible wildlife of Africa on a thrilling safari.",
       "reviews": [],
-      "photo": "/tour-images/tour-img11.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/8cfe0725-7695-408c-a09b-7f5c5215f625",
       "featured": true
     },
     {
-      "id": 3,
       "title": "Machu Picchu Trek, Peru",
       "city": "Cusco",
       "address": "Andes Mountains, Peru",
@@ -35,11 +32,10 @@
       "maxGroupSize": 10,
       "desc": "Hike the ancient Inca trail to the breathtaking Machu Picchu ruins.",
       "reviews": [],
-      "photo": "/tour-images/tour-img12.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/76856f93-ec4a-4597-b61c-8fe620613b59",
       "featured": true
     },
     {
-      "id": 4,
       "title": "Venice Gondola Ride",
       "city": "Venice",
       "address": "Canals of Venice, Italy",
@@ -48,11 +44,10 @@
       "maxGroupSize": 4,
       "desc": "Experience the romance of Venice on a traditional gondola ride.",
       "reviews": [],
-      "photo": "/tour-images/tour-img13.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/cb5039b7-2c5f-4da7-b107-cd295ee5fcff",
       "featured": true
     },
     {
-      "id": 5,
       "title": "Great Wall of China Tour",
       "city": "Beijing",
       "address": "Great Wall, China",
@@ -61,11 +56,10 @@
       "maxGroupSize": 15,
       "desc": "Explore the iconic Great Wall of China and its history.",
       "reviews": [],
-      "photo": "/tour-images/tour-img14.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/454f8ad0-2cd2-430f-93f5-2adbc6b039d0",
       "featured": true
     },
     {
-      "id": 6,
       "title": "Aurora Borealis, Norway",
       "city": "Tromsø",
       "address": "Arctic Circle, Norway",
@@ -74,11 +68,10 @@
       "maxGroupSize": 10,
       "desc": "Chase the Northern Lights in the Arctic wilderness of Norway.",
       "reviews": [],
-      "photo": "/tour-images/tour-img15.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/ef77e27d-a6c1-4f04-bbce-60d3c5b4a553",
       "featured": true
     },
     {
-      "id": 7,
       "title": "Santorini Island Getaway",
       "city": "Santorini",
       "address": "Aegean Sea, Greece",
@@ -87,11 +80,10 @@
       "maxGroupSize": 6,
       "desc": "Relax on the beautiful beaches and explore the stunning views of Santorini.",
       "reviews": [],
-      "photo": "/tour-images/tour-img16.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/fca6607a-6b1d-4ebf-a459-9f6c23ad5170",
       "featured": true
     },
     {
-      "id": 8,
       "title": "Grand Canyon Adventure",
       "city": "Flagstaff",
       "address": "Grand Canyon, USA",
@@ -100,11 +92,10 @@
       "maxGroupSize": 8,
       "desc": "Hike and raft through the awe-inspiring Grand Canyon landscape.",
       "reviews": [],
-      "photo": "/tour-images/tour-img17.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/38e03d5e-59e2-4ce4-bc7a-d6f67e053ba4",
       "featured": true
     },
     {
-      "id": 9,
       "title": "Skiing in the Swiss Alps",
       "city": "Zermatt",
       "address": "Swiss Alps, Switzerland",
@@ -113,11 +104,10 @@
       "maxGroupSize": 10,
       "desc": "Hit the slopes and enjoy winter sports in the Swiss Alps.",
       "reviews": [],
-      "photo": "/tour-images/tour-img18.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/8cfe0725-7695-408c-a09b-7f5c5215f625",
       "featured": true
     },
     {
-      "id": 10,
       "title": "Egyptian Pyramids Expedition",
       "city": "Cairo",
       "address": "Giza Plateau, Egypt",
@@ -126,11 +116,10 @@
       "maxGroupSize": 12,
       "desc": "Explore the ancient wonders of the Egyptian pyramids and sphinx.",
       "reviews": [],
-      "photo": "/tour-images/tour-img19.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/76856f93-ec4a-4597-b61c-8fe620613b59",
       "featured": true
     },
     {
-      "id": 11,
       "title": "Rio de Janeiro Carnival",
       "city": "Rio de Janeiro",
       "address": "Sambadrome, Brazil",
@@ -139,11 +128,10 @@
       "maxGroupSize": 6,
       "desc": "Experience the vibrant Rio Carnival with samba parades and colorful costumes.",
       "reviews": [],
-      "photo": "/tour-images/tour-img20.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/cb5039b7-2c5f-4da7-b107-cd295ee5fcff",
       "featured": true
     },
     {
-      "id": 12,
       "title": "Venice Biennale Art Exhibition",
       "city": "Venice",
       "address": "Giardini della Biennale, Italy",
@@ -152,11 +140,10 @@
       "maxGroupSize": 8,
       "desc": "Explore contemporary art at the prestigious Venice Biennale.",
       "reviews": [],
-      "photo": "/tour-images/tour-img21.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/454f8ad0-2cd2-430f-93f5-2adbc6b039d0",
       "featured": true
     },
     {
-      "id": 13,
       "title": "Taj Mahal Tour, India",
       "city": "Agra",
       "address": "Taj Mahal, India",
@@ -165,11 +152,10 @@
       "maxGroupSize": 15,
       "desc": "Visit the iconic Taj Mahal and learn about its history and architecture.",
       "reviews": [],
-      "photo": "/tour-images/tour-img22.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/ef77e27d-a6c1-4f04-bbce-60d3c5b4a553",
       "featured": true
     },
     {
-      "id": 14,
       "title": "Amazon Rainforest Expedition",
       "city": "Manaus",
       "address": "Amazon Rainforest, Brazil",
@@ -178,11 +164,10 @@
       "maxGroupSize": 10,
       "desc": "Explore the diverse ecosystems of the Amazon rainforest.",
       "reviews": [],
-      "photo": "/tour-images/tour-img23.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/fca6607a-6b1d-4ebf-a459-9f6c23ad5170",
       "featured": true
     },
     {
-      "id": 15,
       "title": "Mediterranean Cruise",
       "city": "Various Ports",
       "address": "Mediterranean Sea",
@@ -191,11 +176,10 @@
       "maxGroupSize": 12,
       "desc": "Cruise through the beautiful Mediterranean, visiting multiple ports.",
       "reviews": [],
-      "photo": "/tour-images/tour-img24.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/38e03d5e-59e2-4ce4-bc7a-d6f67e053ba4",
       "featured": true
     },
     {
-      "id": 16,
       "title": "Yellowstone National Park Adventure",
       "city": "Cody",
       "address": "Yellowstone, USA",
@@ -204,11 +188,10 @@
       "maxGroupSize": 8,
       "desc": "Discover the natural wonders of Yellowstone National Park.",
       "reviews": [],
-      "photo": "/tour-images/tour-img25.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/8cfe0725-7695-408c-a09b-7f5c5215f625",
       "featured": true
     },
     {
-      "id": 17,
       "title": "Amsterdam Canal Cruise",
       "city": "Amsterdam",
       "address": "Amsterdam Canals, Netherlands",
@@ -217,11 +200,10 @@
       "maxGroupSize": 20,
       "desc": "Enjoy a scenic cruise along the picturesque canals of Amsterdam.",
       "reviews": [],
-      "photo": "/tour-images/tour-img26.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/76856f93-ec4a-4597-b61c-8fe620613b59",
       "featured": true
     },
     {
-      "id": 18,
       "title": "African Safari, Tanzania",
       "city": "Arusha",
       "address": "Serengeti National Park, Tanzania",
@@ -230,11 +212,10 @@
       "maxGroupSize": 12,
       "desc": "Witness the incredible wildlife of the Serengeti on an African safari.",
       "reviews": [],
-      "photo": "/tour-images/tour-img27.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/cb5039b7-2c5f-4da7-b107-cd295ee5fcff",
       "featured": true
     },
     {
-      "id": 19,
       "title": "Mediterranean Island Hopping",
       "city": "Athens",
       "address": "Various Mediterranean Islands",
@@ -243,11 +224,10 @@
       "maxGroupSize": 10,
       "desc": "Explore multiple stunning Mediterranean islands on this island-hopping adventure.",
       "reviews": [],
-      "photo": "/tour-images/tour-img28.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/454f8ad0-2cd2-430f-93f5-2adbc6b039d0",
       "featured": true
     },
     {
-      "id": 20,
       "title": "Dubai Desert Safari",
       "city": "Dubai",
       "address": "Dubai Desert, UAE",
@@ -256,11 +236,10 @@
       "maxGroupSize": 8,
       "desc": "Experience the desert landscape of Dubai with a thrilling safari.",
       "reviews": [],
-      "photo": "/tour-images/tour-img29.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/ef77e27d-a6c1-4f04-bbce-60d3c5b4a553",
       "featured": true
     },
     {
-    "id": 21,
     "title": "Marrakech Souk Exploration",
     "city": "Marrakech",
     "address": "Marrakech Medina, Morocco",
@@ -269,11 +248,10 @@
     "maxGroupSize": 10,
     "desc": "Navigate the vibrant and bustling markets of Marrakech's old town.",
     "reviews": [],
-    "photo": "/tour-images/tour-img30.jpg",
+    "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/fca6607a-6b1d-4ebf-a459-9f6c23ad5170",
     "featured": true
     },
     {
-      "id": 22,
       "title": "Iguazu Falls Adventure, Argentina",
       "city": "Puerto Iguazu",
       "address": "Iguazu Falls, Argentina",
@@ -282,11 +260,10 @@
       "maxGroupSize": 12,
       "desc": "Discover the awe-inspiring Iguazu Falls and its surrounding rainforest.",
       "reviews": [],
-      "photo": "/tour-images/tour-img31.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/38e03d5e-59e2-4ce4-bc7a-d6f67e053ba4",
       "featured": true
     },
     {
-      "id": 23,
       "title": "Alaskan Wilderness Expedition",
       "city": "Anchorage",
       "address": "Alaskan Wilderness, USA",
@@ -295,11 +272,10 @@
       "maxGroupSize": 8,
       "desc": "Explore the pristine wilderness of Alaska and its diverse wildlife.",
       "reviews": [],
-      "photo": "/tour-images/tour-img32.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/8cfe0725-7695-408c-a09b-7f5c5215f625",
       "featured": true
     },
     {
-      "id": 24,
       "title": "Barcelona Gaudi Tour",
       "city": "Barcelona",
       "address": "Various Gaudi Sites, Spain",
@@ -308,11 +284,10 @@
       "maxGroupSize": 15,
       "desc": "Visit the architectural masterpieces of Antoni Gaudi in Barcelona.",
       "reviews": [],
-      "photo": "/tour-images/tour-img33.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/76856f93-ec4a-4597-b61c-8fe620613b59",
       "featured": true
     },
     {
-      "id": 25,
       "title": "Skiing in Aspen, USA",
       "city": "Aspen",
       "address": "Aspen Mountains, USA",
@@ -321,11 +296,10 @@
       "maxGroupSize": 6,
       "desc": "Hit the slopes in the renowned ski resort town of Aspen.",
       "reviews": [],
-      "photo": "/tour-images/tour-img34.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/cb5039b7-2c5f-4da7-b107-cd295ee5fcff",
       "featured": true
     },
     {
-      "id": 26,
       "title": "Bora Bora Overwater Bungalow",
       "city": "Bora Bora",
       "address": "Bora Bora Lagoon, French Polynesia",
@@ -334,11 +308,10 @@
       "maxGroupSize": 4,
       "desc": "Relax in luxurious overwater bungalows in the crystal-clear waters of Bora Bora.",
       "reviews": [],
-      "photo": "/tour-images/tour-img35.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/454f8ad0-2cd2-430f-93f5-2adbc6b039d0",
       "featured": true
     },
     {
-      "id": 27,
       "title": "Athens Historical Tour, Greece",
       "city": "Athens",
       "address": "Various Historical Sites, Greece",
@@ -347,11 +320,10 @@
       "maxGroupSize": 20,
       "desc": "Discover the rich history of Athens by visiting its ancient landmarks.",
       "reviews": [],
-      "photo": "/tour-images/tour-img36.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/ef77e27d-a6c1-4f04-bbce-60d3c5b4a553",
       "featured": true
     },
     {
-      "id": 28,
       "title": "Hawaiian Luau Experience",
       "city": "Honolulu",
       "address": "Hawaiian Beach, USA",
@@ -360,11 +332,10 @@
       "maxGroupSize": 15,
       "desc": "Enjoy a traditional Hawaiian luau with music, dance, and delicious food.",
       "reviews": [],
-      "photo": "/tour-images/tour-img37.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/fca6607a-6b1d-4ebf-a459-9f6c23ad5170",
       "featured": true
     },
     {
-      "id": 29,
       "title": "Camel Trekking in Sahara Desert",
       "city": "Merzouga",
       "address": "Sahara Desert, Morocco",
@@ -373,11 +344,10 @@
       "maxGroupSize": 10,
       "desc": "Experience the magic of the Sahara Desert on a camel trekking adventure.",
       "reviews": [],
-      "photo": "/tour-images/tour-img38.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/38e03d5e-59e2-4ce4-bc7a-d6f67e053ba4",
       "featured": true
     },
     {
-      "id": 30,
       "title": "Tokyo Disney Resort",
       "city": "Tokyo",
       "address": "Urayasu, Japan",
@@ -386,11 +356,10 @@
       "maxGroupSize": 20,
       "desc": "Visit the magical world of Disney at Tokyo Disney Resort.",
       "reviews": [],
-      "photo": "/tour-images/tour-img39.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/38e03d5e-59e2-4ce4-bc7a-d6f67e053ba4",
       "featured": true
     },
     {
-      "id": 31,
       "title": "Dubrovnik Old Town Tour, Croatia",
       "city": "Dubrovnik",
       "address": "Dubrovnik Old Town, Croatia",
@@ -399,11 +368,10 @@
       "maxGroupSize": 15,
       "desc": "Explore the historic and charming old town of Dubrovnik.",
       "reviews": [],
-      "photo": "/tour-images/tour-img40.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/8cfe0725-7695-408c-a09b-7f5c5215f625",
       "featured": true
     },
     {
-      "id": 32,
       "title": "Hiking in the Swiss Alps",
       "city": "Interlaken",
       "address": "Swiss Alps, Switzerland",
@@ -412,11 +380,10 @@
       "maxGroupSize": 12,
       "desc": "Embark on a scenic hiking adventure in the stunning Swiss Alps.",
       "reviews": [],
-      "photo": "/tour-images/tour-img41.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/76856f93-ec4a-4597-b61c-8fe620613b59",
       "featured": true
     },
     {
-      "id": 33,
       "title": "Dubai Shopping Extravaganza",
       "city": "Dubai",
       "address": "Various Malls, UAE",
@@ -425,11 +392,10 @@
       "maxGroupSize": 20,
       "desc": "Shop 'til you drop in the luxurious malls of Dubai.",
       "reviews": [],
-      "photo": "/tour-images/tour-img42.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/cb5039b7-2c5f-4da7-b107-cd295ee5fcff",
       "featured": true
     },
     {
-      "id": 34,
       "title": "Cruise the Norwegian Fjords",
       "city": "Bergen",
       "address": "Norwegian Fjords, Norway",
@@ -438,11 +404,10 @@
       "maxGroupSize": 10,
       "desc": "Sail through the breathtaking Norwegian Fjords and witness nature's wonders.",
       "reviews": [],
-      "photo": "/tour-images/tour-img43.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/454f8ad0-2cd2-430f-93f5-2adbc6b039d0",
       "featured": true
     },
     {
-      "id": 35,
       "title": "Dublin Pub Crawl",
       "city": "Dublin",
       "address": "Various Pubs, Ireland",
@@ -451,11 +416,10 @@
       "maxGroupSize": 15,
       "desc": "Experience the lively atmosphere of Dublin's famous pubs on a pub crawl.",
       "reviews": [],
-      "photo": "/tour-images/tour-img44.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/ef77e27d-a6c1-4f04-bbce-60d3c5b4a553",
       "featured": true
     },
     {
-      "id": 36,
       "title": "Antelope Canyon Photography Tour, USA",
       "city": "Page",
       "address": "Antelope Canyon, USA",
@@ -464,11 +428,10 @@
       "maxGroupSize": 8,
       "desc": "Capture the stunning beauty of Antelope Canyon through your lens.",
       "reviews": [],
-      "photo": "/tour-images/tour-img45.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/fca6607a-6b1d-4ebf-a459-9f6c23ad5170",
       "featured": true
     },
     {
-      "id": 37,
       "title": "Cappadocia Hot Air Balloon Ride, Turkey",
       "city": "Goreme",
       "address": "Cappadocia, Turkey",
@@ -477,11 +440,10 @@
       "maxGroupSize": 20,
       "desc": "Soar above the unique landscapes of Cappadocia in a hot air balloon.",
       "reviews": [],
-      "photo": "/tour-images/tour-img46.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/38e03d5e-59e2-4ce4-bc7a-d6f67e053ba4",
       "featured": true
     },
     {
-      "id": 38,
       "title": "Venice Glassblowing Workshop",
       "city": "Venice",
       "address": "Venice, Italy",
@@ -490,11 +452,10 @@
       "maxGroupSize": 8,
       "desc": "Learn the art of glassblowing in the historic city of Venice.",
       "reviews": [],
-      "photo": "/tour-images/tour-img47.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/8cfe0725-7695-408c-a09b-7f5c5215f625",
       "featured": true
     },
     {
-      "id": 39,
       "title": "Galapagos Islands Cruise",
       "city": "Galapagos Islands",
       "address": "Galapagos Archipelago",
@@ -503,11 +464,10 @@
       "maxGroupSize": 12,
       "desc": "Explore the unique and diverse wildlife of the Galapagos Islands on a cruise.",
       "reviews": [],
-      "photo": "/tour-images/tour-img48.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/76856f93-ec4a-4597-b61c-8fe620613b59",
       "featured": true
     },
     {
-      "id": 40,
       "title": "Vienna Classical Concert",
       "city": "Vienna",
       "address": "Vienna Opera House, Austria",
@@ -516,11 +476,10 @@
       "maxGroupSize": 6,
       "desc": "Enjoy a classical music concert in the renowned Vienna Opera House.",
       "reviews": [],
-      "photo": "/tour-images/tour-img49.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/cb5039b7-2c5f-4da7-b107-cd295ee5fcff",
       "featured": true
     },
     {
-      "id": 41,
       "title": "Mongolian Nomad Experience",
       "city": "Ulaanbaatar",
       "address": "Mongolian Steppes, Mongolia",
@@ -529,11 +488,10 @@
       "maxGroupSize": 10,
       "desc": "Live like a nomad and explore the vast Mongolian steppes.",
       "reviews": [],
-      "photo": "/tour-images/tour-img50.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/454f8ad0-2cd2-430f-93f5-2adbc6b039d0",
       "featured": true
     },
     {
-      "id": 42,
       "title": "Amalfi Coast Road Trip, Italy",
       "city": "Amalfi",
       "address": "Amalfi Coast, Italy",
@@ -542,11 +500,10 @@
       "maxGroupSize": 6,
       "desc": "Drive along the stunning Amalfi Coast and soak in its breathtaking views.",
       "reviews": [],
-      "photo": "/tour-images/tour-img51.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/ef77e27d-a6c1-4f04-bbce-60d3c5b4a553",
       "featured": true
     },
     {
-      "id": 43,
       "title": "Skiing in the French Alps",
       "city": "Chamonix",
       "address": "French Alps, France",
@@ -555,11 +512,10 @@
       "maxGroupSize": 8,
       "desc": "Hit the slopes in the picturesque French Alps for a skiing adventure.",
       "reviews": [],
-      "photo": "/tour-images/tour-img52.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/fca6607a-6b1d-4ebf-a459-9f6c23ad5170",
       "featured": true
     },
     {
-      "id": 44,
       "title": "Cairo Pyramids and Sphinx Tour, Egypt",
       "city": "Cairo",
       "address": "Giza Plateau, Egypt",
@@ -568,7 +524,7 @@
       "maxGroupSize": 12,
       "desc": "Visit the iconic pyramids and the enigmatic Sphinx in Cairo.",
       "reviews": [],
-      "photo": "/tour-images/tour-img53.jpg",
+      "photo": "https://github.com/ashishsen003/travel-seekers-2/assets/112822104/38e03d5e-59e2-4ce4-bc7a-d6f67e053ba4",
       "featured": true
     }  
   ]

@@ -1,10 +1,10 @@
-import tourImg01 from "../images/tour-img01.jpg";
-import tourImg02 from "../images/tour-img02.jpg";
-import tourImg03 from "../images/tour-img03.jpg";
-import tourImg04 from "../images/tour-img04.jpg";
-import tourImg05 from "../images/tour-img05.jpg";
-import tourImg06 from "../images/tour-img06.jpg";
-import tourImg07 from "../images/tour-img07.jpg";
+import tourImg1 from "../images/tour-img1.jpg";
+import tourImg2 from "../images/tour-img2.jpg";
+import tourImg3 from "../images/tour-img3.jpg";
+import tourImg4 from "../images/tour-img4.jpg";
+import tourImg5 from "../images/tour-img5.jpg";
+import tourImg6 from "../images/tour-img6.jpg";
+import tourImg7 from "../images/tour-img7.jpg";
 
 const tours = [
   {
@@ -27,7 +27,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    photo: tourImg01,
+    photo: tourImg1,
     featured: true,
   },
   {
@@ -50,7 +50,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    photo: tourImg02,
+    photo: tourImg2,
     featured: true,
   },
   {
@@ -64,7 +64,7 @@ const tours = [
     desc: "Explore the diverse ecosystems of the Amazon rainforest.",
     reviews: [],
     avgRating: 4.5,
-    photo: tourImg03,
+    photo: tourImg3,
     featured: true,
   },
   {
@@ -83,7 +83,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    photo: tourImg04,
+    photo: tourImg4,
     featured: true,
   },
   {
@@ -102,7 +102,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    photo: tourImg05,
+    photo: tourImg5,
     featured: true,
   },
   {
@@ -125,7 +125,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    photo: tourImg06,
+    photo: tourImg6,
     featured: true,
   },
   {
@@ -148,7 +148,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    photo: tourImg07,
+    photo: tourImg7,
     featured: true,
   },
   {
@@ -162,7 +162,7 @@ const tours = [
     desc: "Experience the vibrant Rio Carnival with samba parades and colorful costumes.",
     reviews: [],
     avgRating: 4.5,
-    photo: tourImg03,
+    photo: tourImg3,
     featured: true,
   },
   // {
@@ -185,7 +185,7 @@ const tours = [
   //     },
   //   ],
   //   avgRating: 4.35,
-  //   photo: tourImg01,
+  //   photo: tourImg1,
   //   featured: false,
   // },
   // {
