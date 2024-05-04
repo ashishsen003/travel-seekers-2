@@ -1,43 +1,46 @@
 import React, {useRef, useState} from 'react'
 import './search-bar.css';
 import { useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
-import {
-    Alert,
-    AlertIcon,
-    AlertTitle,
-  } from '@chakra-ui/react'
-
+import { useNavigate, useSearchParams } from "react-router-dom";
+import {Alert,AlertIcon,AlertTitle} from '@chakra-ui/react'
 import {Col, Form, FormGroup} from 'reactstrap';
+import { BASE_URL } from '../utils/config';
 
 const SearchBar = () => {
-    const [searcParams, setSearchParams] = useSearchParams();
+    // const [searcParams, setSearchParams] = useSearchParams();
     // const [q, setq] = useState();
-    const [title, setTitle] = useState(searcParams.get('q') || '');
-
-    // const locationRef = useRef('')
+    // const [title, setTitle] = useState(searcParams.get('q') || '');
+    
+    const locationRef = useRef('')
     const distanceRef = useRef(0)
     const maxGroupSizeRef = useRef(0)
+    const navigate = useNavigate()
     
-    const searchHandler = (e)=>{
+    const searchHandler = async(e)=>{
     
-        // const location = locationRef.current.value
+        const location = locationRef.current.value
         const distance = distanceRef.current.value
         const maxGroupSize = maxGroupSizeRef.current.value
 
-        if(title === '' && distance === '' && maxGroupSize === ''){
+        if(location === '' && distance === '' && maxGroupSize === ''){
 
-                <Alert status="error">
-                    <AlertIcon />
-                    <AlertTitle>Fill the Fields</AlertTitle>
-                </Alert>
+            <Alert status="error">
+                <AlertIcon />
+                <AlertTitle>Fill the Fields</AlertTitle>
+            </Alert>
         }
-        else if(title !== "") {
-            const params = {
-                q:title
-              }
-              setSearchParams(params);          
-        }
+            const res = await fetch(`${BASE_URL}/tours/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`)
+
+            if(!res.ok) alert('Something went wrong')
+            const result = await res.json()
+
+            navigate(`/tours/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`, {state: result.data})
+        // else if(title !== "") {
+        //     const params = {
+        //         q:title
+        //       }
+        //       setSearchParams(params);          
+        // }
     }
 
 
@@ -51,7 +54,7 @@ const SearchBar = () => {
                     </span>
                     <div>
                         <h5>Location</h5>
-                        <input type="text" name='city' placeholder='Where are you going?' value={title} onChange={(e) => setTitle(e.target.value)} />
+                        <input type="text" name='city' placeholder='Where are you going?' ref={locationRef} />
                     </div>
                 </FormGroup>
                 <FormGroup className='d-flex gap-3 form__group form__group-fast'>
