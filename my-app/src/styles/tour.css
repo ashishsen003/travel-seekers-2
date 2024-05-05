@@ -17,3 +17,13 @@
   background: var(--secondary-color);
   color: #fff !important;
 }
+
+.loading__div{
+  display: "flex";
+  justify-content: "center";
+  align-items: "center",
+}
+
+.loading__div > img{
+  width: 20%;
+}

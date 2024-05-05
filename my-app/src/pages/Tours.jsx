@@ -12,36 +12,45 @@ import { Sidebar } from "../components/Sidebar";
 import Pagination from "./Pagination";
 import loading from "../assets/loading.gif";
 import { Img } from "@chakra-ui/react";
+import useFetch from "../hooks/useFetch.js";
+import { BASE_URL } from "../utils/config";
 
 const Tours = () => {
-  const [page, setPage] = useState(0);
   const [pageCount, setPageCount] = useState(0);
+  const [page, setPage] = useState(0);
 
-  const { isLoading, isError, tours, totalPages } = useSelector((store) => {
-    return {
-      isLoading: store.tourReducer.isLoading,
-      isError: store.tourReducer.isError,
-      tours: store.tourReducer.tours,
-      totalPages: store.tourReducer.totalPages,
-    };
-  }, shallowEqual);
+  const {
+    data: tours,
+    loading,
+    error,
+  } = useFetch(`${BASE_URL}/tours?page=${page}`);
+  const { data: tourCount } = useFetch(`${BASE_URL}/tours/search/getTourCount`);
 
-  const [searchParams] = useSearchParams();
-  const dispatch = useDispatch();
+  // const { isLoading, error, tours, totalPages } = useSelector((store) => {
+  //   return {
+  //     isLoading: store.tourReducer.isLoading,
+  //     error: store.tourReducer.error,
+  //     tours: store.tourReducer.tours,
+  //     totalPages: store.tourReducer.totalPages,
+  //   };
+  // }, shallowEqual);
+
+  // const [searchParams] = useSearchParams();
+  // const dispatch = useDispatch();
 
   useEffect(() => {
-    const pages = Math.ceil(8 / 4);
+    const pages = Math.ceil(tourCount / 8);
     setPageCount(pages);
-
-    const params = {
-      _q: searchParams.get("q"),
-      _limit: 12,
-      _page: page,
-      _sort: searchParams.get("order") && "price",
-      _order: searchParams.get("order"),
-    };
-    dispatch(getTour(params));
-  }, [dispatch, searchParams, page]);
+    window.scrollTo(0,0)
+    // const params = {
+    //   _q: searchParams.get("q"),
+    //   _limit: 12,
+    //   _page: page,
+    //   _sort: searchParams.get("order") && "price",
+    //   _order: searchParams.get("order"),
+    // };
+    // dispatch(getTour(params));
+  }, [page, tourCount, tours]);
 
   // console.log(tours);
 
@@ -58,46 +67,39 @@ const Tours = () => {
       </section>
       <section className="pt-0">
         <Container>
-          {isLoading && (
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              {" "}
-              <img src={loading} style={{ width: "20%" }} />{" "}
+          {loading && (
+            <div className="loading__div">
+              <img src={loading}/>
             </div>
           )}
-          {isError && <h1>Errorrrr...</h1>}
-          <Row>
-            {!isLoading &&
-              !isError &&
-              tours?.map((tour) => (
-                <Col lg="3" gap="10px" key={tour.id}>
+          {error && <h4 className="text-center pt-5">{error}</h4>}
+          {!loading && !error && (
+            <Row>
+              {tours?.map((tour) => (
+                <Col lg="3" className="mb-4" key={tour.id}>
                   <TourCard tour={tour} />
                 </Col>
               ))}
-            <Col lg="12">
-              <div className="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
-                {/* {!isLoading && <Pagination
+              <Col lg="12">
+                <div className="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
+                  {/* {!isLoading && <Pagination
                 totalPages={totalPages}
                 currentPage={page}
                 setCurrentPage={setPage}
                 />} */}
-                {[...Array(pageCount).keys()].map((number) => (
-                  <span
-                    key={number}
-                    onClick={() => setPage(number)}
-                    className={page === number ? "active__page" : ""}
-                  >
-                    {number + 1}
-                  </span>
-                ))}
-              </div>
-            </Col>
-          </Row>
+                  {[...Array(pageCount).keys()].map((number) => (
+                    <span
+                      key={number}
+                      onClick={() => setPage(number)}
+                      className={page === number ? "active__page" : ""}
+                    >
+                      {number + 1}
+                    </span>
+                  ))}
+                </div>
+              </Col>
+            </Row>
+          )}
         </Container>
       </section>
       <Newsletter />

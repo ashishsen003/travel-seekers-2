@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 import {CommonSection} from './../shared/CommonSection'
 import TourCard from '../shared/TourCard'
+import Newsletter from '../shared/Newsletter'
 
 const SearchResultList = () => {
   const location = useLocation()
@@ -27,6 +28,7 @@ const SearchResultList = () => {
           </Row>
         </Container>
       </section>
+      <Newsletter / >
     </>
   )
 }

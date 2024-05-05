@@ -96,7 +96,6 @@ export const Booking = ({ tour, avgRating, totalRating }) => {
         </ListGroup>
         <Button
           className="btn primary__btn w-100 mt-4"
-          style={{ backgroundColor: "#1071DB" }}
           onClick={handleClick}
         >
           Book Now

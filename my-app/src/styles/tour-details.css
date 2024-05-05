@@ -43,11 +43,11 @@
   color: var(--text-color);
 }
 
-.rating__group span {
+.rating__group span i{
   font-size: 1.1rem;
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  color: var(--secondry-color);
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
