@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Container, Row, Form, FormGroup, Button, Col } from "reactstrap";
 import "../styles/login.css";
 import registerImg from "../assets/images/register.png";
 import userIcon from "../assets/images/user.png";
 import { MdPassword } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { BASE_URL } from "../utils/config";
+import { AuthContext } from "../context/AuthContext";
 
 export const Register = () => {
 
@@ -14,12 +16,32 @@ export const Register = () => {
     password: null
   });
 
+  const {dispatch} = useContext(AuthContext)
+  const navigate = useNavigate()
+
   const handleChange = (e) => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
 
-  const handleClick = (e) => {
+  const handleClick = async(e) => {
     e.preventDefault()
+
+    try {
+      const res = await fetch(`${BASE_URL}/auth/register`, {
+        method:'POST',
+        headers:{
+          'content-type': 'application/json'
+        },
+        body:JSON.stringify(credentials)
+      })
+      const result = await res.json()
+      if(!res.ok) alert(result.message)
+
+        dispatch({type: 'REGISTER_SUCCESS'})
+        navigate('/login')
+    } catch (error) {
+      alert(error.message)
+    }
   };
 
 
@@ -41,7 +63,7 @@ export const Register = () => {
 
                 <Form onSubmit={handleClick}>
                   <FormGroup>
-                    <input type="text" placeholder="Username" required id='Username' onChange={handleChange} />
+                    <input type="text" placeholder="Username" required id='username' onChange={handleChange} />
                   </FormGroup>
                   <FormGroup>
                     <input type="email" placeholder="Email" required id='email' onChange={handleChange} />
