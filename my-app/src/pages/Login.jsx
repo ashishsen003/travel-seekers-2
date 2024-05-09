@@ -28,17 +28,17 @@ const Login = () => {
 
     try {
       const res = await fetch(`${BASE_URL}/auth/login`, {
-        method:'post',
+        method:"POST",
         headers:{
-          'content-type': 'application/json'
+          'Content-Type': 'application/json'
         },
-        credentials:'include',
+        // credentials:'include',
         body:JSON.stringify(credentials)
       })
       const result = await res.json()
       if(!res.ok) alert(result.message)
 
-      console.log(result.data);
+      // console.log(result.data);
 
       dispatch({type: 'LOGIN_SUCCESS', paylaod: result.data})
       navigate('/')

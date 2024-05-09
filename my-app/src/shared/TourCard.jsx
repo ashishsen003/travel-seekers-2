@@ -27,11 +27,11 @@ const TourCard = ({ tour }) => {
         <CardBody>
           <div className="card__top d-flex align-items-center justify-content-between">
             <span className="tour__location d-flex align-items-center gap-1">
-              <i class="ri-map-pin-fill"></i>
+              <i className="ri-map-pin-fill"></i>
               {city}
             </span>
             <span className="tour__rating d-flex align-items-center gap-1">
-              <i class="ri-star-fill"></i>
+              <i className="ri-star-fill"></i>
               {avgRating === 0 ? null : avgRating}{" "}
               {totalRating === 0 ? (
                 "Not Rated"
