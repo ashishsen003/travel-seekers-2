@@ -52,16 +52,16 @@ const Footer = () => {
               <p>Stay connected and follow us on social media for daily doses of travel inspiration and updates.</p>
               <div className='social__links d-flex align-items-center gap-4'>
                 <span>
-                  <Link to='#'><i class="ri-youtube-fill"></i></Link>
+                  <Link to='#'><i className="ri-youtube-fill"></i></Link>
                 </span>
                 <span>
-                  <Link to='#'><i class="ri-github-fill"></i></Link>
+                  <Link to='#'><i className="ri-github-fill"></i></Link>
                 </span>
                 <span>
-                  <Link to='#'><i class="ri-facebook-fill"></i></Link>
+                  <Link to='#'><i className="ri-facebook-fill"></i></Link>
                 </span>
                 <span>
-                  <Link to='#'><i class="ri-instagram-fill"></i></Link>
+                  <Link to='#'><i className="ri-instagram-fill"></i></Link>
                 </span>
               </div>
             </div>
@@ -95,21 +95,21 @@ const Footer = () => {
             <ListGroup className='footer__quick-links'>
                   <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                     <h6 className='mb-0 d-flex align-items-center gap-2'>
-                      <span><i class="ri-map-pin-fill"></i></span>
+                      <span><i className="ri-map-pin-fill"></i></span>
                       Address:
                     </h6>
                     <p className='mb-0'>Delhi, India</p>
                   </ListGroupItem>
                   <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                     <h6 className='mb-0 d-flex align-items-center gap-2'>
-                      <span><i class="ri-mail-fill"></i></span>
+                      <span><i className="ri-mail-fill"></i></span>
                       Email:
                     </h6>
                     <p className='mb-0'>contactUs@gmail.com</p>
                   </ListGroupItem>
                   <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                     <h6 className='mb-0 d-flex align-items-center gap-2'>
-                      <span><i class="ri-phone-fill"></i></span>
+                      <span><i className="ri-phone-fill"></i></span>
                       Phone:
                     </h6>
                     <p className='mb-0'>+91978453894</p>

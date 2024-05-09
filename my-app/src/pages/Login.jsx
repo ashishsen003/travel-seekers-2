@@ -11,8 +11,8 @@ import { AuthContext } from "../context/AuthContext";
 const Login = () => {
 
   const [credentials, setCredentials] = useState({
-    email: null,
-    password: null
+    email: undefined,
+    password: undefined 
   });
   
   const {dispatch} = useContext(AuthContext)
@@ -28,7 +28,7 @@ const Login = () => {
 
     try {
       const res = await fetch(`${BASE_URL}/auth/login`, {
-        method:'POST',
+        method:'post',
         headers:{
           'content-type': 'application/json'
         },
