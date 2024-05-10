@@ -11,8 +11,8 @@ import { AuthContext } from "../context/AuthContext";
 const Login = () => {
 
   const [credentials, setCredentials] = useState({
-    email: undefined,
-    password: undefined 
+    email: null,
+    password: null 
   });
   
   const {dispatch} = useContext(AuthContext)
@@ -38,9 +38,8 @@ const Login = () => {
       const result = await res.json()
       if(!res.ok) alert(result.message)
 
-      // console.log(result.data);
-
-      dispatch({type: 'LOGIN_SUCCESS', paylaod: result.data})
+        
+        dispatch({type: 'LOGIN_SUCCESS', payload: result.data})
       navigate('/')
 
     } catch (error) {
