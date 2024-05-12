@@ -62,6 +62,35 @@ const TourDetails = () => {
       alert(error.message)
     }
   };
+  // const submitHandle = async(e) => {
+  //   e.preventDefault();
+  //   const reviewText = reviewMsgRef.current.value;
+  //   try {
+  //     if(!user || user === undefined || user === null){
+  //       alert('Please sign in')
+  //     }
+  //     const reviewObj = {
+  //       username: user?.username,
+  //       reviewText,
+  //       rating:tourRating
+  //     }
+  //     const res = await fetch(`${BASE_URL}/review/${id}`, {
+  //       method: 'POST',
+  //       headers:{
+  //         'Content-Type':'application/json'
+  //       },
+  //       // credentials: 'include',
+  //       body: JSON.stringify(reviewObj)
+  //     })
+  //     const result = await res.json()
+  //     if(!res.ok) {
+  //       return alert(result.message)
+  //     }
+  //     alert(result.message)
+  //   } catch (error) {
+  //     alert(error.message)
+  //   }
+  // };
 
   useEffect(() => {
     window.scrollTo(0, 0);
