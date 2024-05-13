@@ -19,6 +19,7 @@ const TourDetails = () => {
   const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
   const {user} = useContext(AuthContext)
   const options = { day: "numeric", month: "long", year: "numeric" };
+  const [load, setLoad] = useState(false)
 
   const {
     photo,
@@ -58,6 +59,7 @@ const TourDetails = () => {
         return alert(result.message)
       }
       alert(result.message)
+      setLoad(!load)
     } catch (error) {
       alert(error.message)
     }
@@ -94,7 +96,7 @@ const TourDetails = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [tour]);
+  }, [tour, load]);
   
   const { avgRating, totalRating } = calculateAvgRating;
   return (
