@@ -76,7 +76,7 @@ const Tours = () => {
           {!loading && !error && (
             <Row>
               {tours?.map((tour) => (
-                <Col lg="3" className="mb-4" key={tour.id}>
+                <Col lg="3" md="6" sm="6" className="mb-4" key={tour.id}>
                   <TourCard tour={tour} />
                 </Col>
               ))}
@@ -88,7 +88,7 @@ const Tours = () => {
                 setCurrentPage={setPage}
                 />} */}
                   {[...Array(pageCount).keys()].map((number) => (
-                    <span
+                    <span 
                       key={number}
                       onClick={() => setPage(number)}
                       className={page === number ? "active__page" : ""}
