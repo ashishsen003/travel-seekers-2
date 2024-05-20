@@ -125,3 +125,21 @@
   font-size: 1.2rem;
   color: var(--secondry-color);
 }
+
+.review__item span{
+  font-weight: 500;
+}
+
+@media only screen and (max-width:768px){
+  .tour__extra-details{
+    flex-wrap: wrap;
+    row-gap: 1rem
+  }
+  .tour__extra-details span{
+    font-size: .9rem !important;
+  }
+  .tour__extra-details span i{
+    font-size: 1rem;
+  }
+}
+
